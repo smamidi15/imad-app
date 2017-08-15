@@ -18,20 +18,21 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/subdivision-one', function (req, res) {
-res.send('A request for subdivision one has been sent by Sreyansh and has arrived')
-}
+res.send('A request for subdivision one has been sent by Sreyansh and has arrived');
+});
+
 app.get('/subdivision-two', function (req, res) {
-res.send('A request for subdivision two has been sent by Sreyansh and has arrived')
-}
+res.send('A request for subdivision two has been sent by Sreyansh and has arrived');
+});
 
 app.get('/subdivision-three', function (req, res) {
-res.send('A request for subdivision three has been sent by Sreyansh and has arrived')
+res.send('A request for subdivision three has been sent by Sreyansh and has arrived');
 }
 
 // Do not change port, otherwise your app won't run on IMAD servers
 // Use 8080 only for local development if you already have apache running on 80
 
-var port = 80;
+var port - 8080;
 app.listen(port, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
