@@ -18,7 +18,7 @@ app.get('/ui/madi.png', function (req, res) {
 });
 
 app.get('/subdivision-one', function (req, res) {
-res.send('A request for subdivision one has been sent by Sreyansh and has arrived');
+     res.sendFile(path.join(__dirname, 'ui', 'subdivision-one.html'));
 });
 
 app.get('/subdivision-two', function (req, res) {
