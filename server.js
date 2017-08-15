@@ -22,11 +22,11 @@ app.get('/subdivision-one', function (req, res) {
 });
 
 app.get('/subdivision-two', function (req, res) {
-res.send('A request for subdivision two has been sent by Sreyansh and has arrived');
+    res.sendFile(path.join(__dirname, 'ui', 'subdivision-two.html'));
 });
 
 app.get('/subdivision-three', function (req, res) {
-res.send('A request for subdivision three has been sent by Sreyansh and has arrived');
+    res.sendFile(path.join(__dirname, 'ui', 'subdivision-three.html'));
 });
 
 // Do not change port, otherwise your app won't run on IMAD servers
