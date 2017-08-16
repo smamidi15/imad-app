@@ -13,9 +13,9 @@ var subdivisionOne = `
             <a href="/subdivision-two">Sreapp Subdivision Two </a>
             <a href="/subdivision-three">Sreapp Subdivison Three </a>
             <hr/>
-        </div>`;
+        </div>
     
-    ` <div>
+    <div>
             <h3>Introduction</h3>
             <h4> First Synthesized August 14th, 2017</h4>
             <p>
