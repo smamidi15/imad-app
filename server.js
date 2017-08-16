@@ -7,27 +7,29 @@ app.use(morgan('combined'));
 
 var subdivisionOne = `
     title:'Sreapp Subdivision One-Synthesized by Sreyansh Mamidi'
-    hyperlinks: `<div>
-            <a href="/">Home</a>
+    hyperlinks: 
+    `<div>
+            `a href="/">Home</a>
             <a href="/subdivision-two">Sreapp Subdivision Two </a>
             <a href="/subdivision-three">Sreapp Subdivison Three </a>
             <hr/>
-        </div>`
-    content:` <div>
+        </div>`;
+    
+    ` <div>
             <h3>Introduction</h3>
             <h4> First Synthesized August 14th, 2017</h4>
             <p>
                 Sreapp is an application designed to give the average human the knowledge of laudable paradoxes.
             </p>
         
-        </div>`
-        `<div>
+        </div>
+        <div>
             <h1>The Grandfather Paradox</h1>
             <p>
                 The Grandfather Paradox is very appealing to my personal sense of curiousity.
             </p>
-        </div>`
-    style: ` <style>
+        </div>;
+    style:' <style>
             .info {
                 color:green;
                 font-family:courier;
@@ -35,13 +37,13 @@ var subdivisionOne = `
             }
             
             
-        </style>`
-};
+        </style>'
+`;
  function createTemplate (data)  {
      var title= data.title;
      var style= data.style;
-     var hyperlinks= data.hyperlinks
-     var content= data.content
+     var hyperlinks= data.hyperlinks;
+     var info= data.info;
   
 var htmlTemplate = `
 <html>
@@ -59,17 +61,14 @@ var htmlTemplate = `
             ${hyperlinks}
         </div>
         <div>
-            ${content}
+            ${info}
         </div>
     </body>
 </html>
 `;
-}
 
 return htmlTemplate;
-
-    
-
+}
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
