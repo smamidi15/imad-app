@@ -5,12 +5,12 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-var subdivisionOne = {
+var subdivisionOne = `
     title:'Sreapp Subdivision One-Synthesized by Sreyansh Mamidi'
     hyperlinks: `<div>
             <a href="/">Home</a>
-            <a href="/subdivision-two">Sreapp Subdivision Two</a>
-            <a href="/subdivision-three">Sreapp Subdivison Three</a>
+            <a href="/subdivision-two">Sreapp Subdivision Two </a>
+            <a href="/subdivision-three">Sreapp Subdivison Three </a>
             <hr/>
         </div>`
     content:` <div>
@@ -20,8 +20,8 @@ var subdivisionOne = {
                 Sreapp is an application designed to give the average human the knowledge of laudable paradoxes.
             </p>
         
-        </div>
-        <div>
+        </div>`
+        `<div>
             <h1>The Grandfather Paradox</h1>
             <p>
                 The Grandfather Paradox is very appealing to my personal sense of curiousity.
